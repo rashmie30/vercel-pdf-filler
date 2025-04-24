@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/health", "dest": "/api/health.js" },
+    { "src": "/fill-pdf", "dest": "/api/fill-pdf.js" },
+    { "src": "/fill-pdf-binary", "dest": "/api/fill-pdf-binary.js" }
+  ]
+} 
